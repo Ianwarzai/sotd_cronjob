@@ -1,5 +1,4 @@
 
-
 const cron = require("node-cron");
 const CronExpression = require("./cron_expression");
 var stock_types=["Entery", "Closing"]
@@ -205,6 +204,12 @@ async function getDayTradingStocks(limit = 7) {
   }
   
 
+
+
+
+
+
+  
   function generateAnalysis(ticker) {
     const prompt = prompts[Math.floor(Math.random() * prompts.length)]
       .replace("AAPL", ticker);
